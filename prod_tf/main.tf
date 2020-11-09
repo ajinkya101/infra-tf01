@@ -4,7 +4,7 @@ module "rg" {
 }
 
 resource "azurerm_network_security_group" "main" {
-  name                = terraform.workspace
+  name                = var.nsg_name
   location            = "East US"
   resource_group_name = "Ajinkya-RG2"
 
